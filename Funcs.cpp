@@ -32,5 +32,3 @@ double add_something(double x, double y)
 {
 	return 0.5 * x + 0.5 * y;
 }
-
-typedef double (*Func)(double x, double y);

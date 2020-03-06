@@ -5,7 +5,7 @@ using namespace std;
 
 bool check_for_vow(string letter)
 {
-	string check_str = "aeiouyAEIOUY";
+	string check_str = "aeiouAEIOU";
 	for (int i = 0; check_str[i] != '\0'; i++)
 	{
 		if (check_str[i] == letter[0])

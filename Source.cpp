@@ -79,6 +79,7 @@ void main()
 	int chapter_num;
 	cout << "Enter chapter_num" << endl;
 	cin >> chapter_num;
+	system("cls");
 	switch (chapter_num)
 	{
 		case 3:

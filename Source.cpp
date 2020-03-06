@@ -42,19 +42,20 @@ void chapter_four()
 
 	scroll.open("D://scroll.txt");
 
-	while (scroll.is_open() == true)
+	if (scroll.is_open())
 	{
-		scroll >> character;
-		if (scroll.eof() == true)
+		while(!scroll.eof())
 		{
-			break;
+			scroll >> character;
+			count += 1;
 		}
-		count += 1;
+		scroll.close();
+		cout << "The count of characters is: " << count << endl;
 	}
-
-	scroll.close();
-
-	cout << "The count of characters is: " << count << endl;
+	else
+	{
+		cout << "Wrong way" << endl;
+	}
 }
 
 void chapter_five()

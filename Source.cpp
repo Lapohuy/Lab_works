@@ -73,3 +73,29 @@ void chapter_five()
 	cout << "The result of calculate is: " << endl;
 	cout << calculate(x, y, add_sum) << endl;
 }
+
+void main()
+{
+	int chapter_num;
+	cout << "Enter chapter_num" << endl;
+	cin >> chapter_num;
+	switch (chapter_num)
+	{
+		case 3:
+			{
+				chapter_three();
+				exit(0);
+			}
+		case 4:
+			{
+				chapter_four();
+				exit(0);
+			}
+		case 5:
+			{
+				chapter_five();
+				exit(0);
+			}
+	}
+}
+	

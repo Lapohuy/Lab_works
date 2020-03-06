@@ -1,7 +1,4 @@
 #pragma once
-#include <string>
-
-using namespace std;
 
 bool check_for_vow(string letter);
 
